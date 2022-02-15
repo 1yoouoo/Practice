@@ -1,0 +1,109 @@
+body {
+    display: block;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin : 0 auto;
+    padding-right: 4.35%;
+    padding-left: 4.35%;
+    min-width: 290px;
+    max-width: 460px;
+    width: auto;
+    
+}
+
+.header {
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+.header h1 {
+    
+    margin: 0 auto;
+    padding-top: 10.27%;
+}
+
+.main {
+    position: relative;
+    display: block;
+}
+
+.footer {
+    margin-top: 30px;
+    display: block;
+    text-align: center;
+}
+
+#main_idlabel {
+    display: flex;
+    position: relative;
+    height: 48px;
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+#main_pwlabel {
+    display: flex;
+    position: relative;
+    height: 48px;
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#id_icon {
+    border: 1px black solid;
+    margin: 0px;
+}
+
+#id_icon img {
+    margin: 3px;
+}
+
+#id_text {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    display: block;
+    width: auto;
+}
+
+#pw_text {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    display: block;
+    width: auto;
+}
+
+#id_text input {
+    width: 408px;
+    height: 44px;
+    padding: 0%;
+    text-indent: 12px;
+    font-weight: 600;
+}
+
+#pw_text input {
+    width: 408px;
+    height: 44px;
+    padding: 0%;
+    text-indent: 12px;
+    font-weight: 600;
+}
+
+#login_button {
+    width: 460px;
+    height: 48px;
+    background-color: #0074E9;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+}

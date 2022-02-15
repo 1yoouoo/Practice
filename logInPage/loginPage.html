@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logInPage</title>
+    <link rel="stylesheet" href="/Practice/logInPage/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1><img src="/Practice/logInPage/coupangMainImg.png" alt="coupang_img" width="195" height="46"></h1>
+        </header>
+
+        <div class="main">
+            <div>
+                <label id="main_idlabel" for="login-email-input">
+                    <span id="id_icon">
+                        <img src="/Practice/logInPage/sample.jpeg" alt="" width="40px" height="40px">
+                    </span>
+                    <span id="id_text">
+                        <input id="id_text_value" type="email"  value placeholder="아이디(이메일)">
+                    </span>
+                </label>
+            </div>
+            
+            <div>
+                <label id="main_pwlabel">
+                    <span id="id_icon">
+                        <img src="/Practice/logInPage/sample.jpeg" alt="" width="40px" height="40px">
+                    </span>
+                    <span id="pw_text">
+                        <input id="pw_text_value" type="password" placeholder="비밀번호">
+                    </span>
+                </label>
+            </div>
+        </div>
+
+        <div>
+            <button id="login_button" onclick="getLoginvalue()">로그인하시겠습니까??? 네 ... 뭐... 해주세요...</button>
+        </div>
+
+        <footer class="footer">
+            <div id = "test">
+                
+            </div>
+            Hi, I'm footer !
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
