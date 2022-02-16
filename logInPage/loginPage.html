@@ -50,5 +50,24 @@
     </div>
 
     <script src="script.js"></script>
+    <script>
+        function checkLogin() {
+            let idValue = document.getElementById("id_text_value").value;
+            let pwValue = document.getElementById("pw_text_value").value;
+            
+
+            if (idValue == '1234' && pwValue == '1234') {
+                localStorage.setItem("idKey", idValue)
+                localStorage.setItem("pwKey", pwValue)
+                userLoginvalue = true
+                window.location.replace('/Practice/Practice/indexPage/index.html')
+                console.log(localStorage.getItem("idkey"))
+                document.getElementById("you").innerHTML = "로그인이 되면 이 글자가 보입니다."
+            }
+            else {
+                alert('오류!!!')
+            }
+        }
+    </script>
 </body>
 </html>

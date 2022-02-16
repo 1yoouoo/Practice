@@ -9,7 +9,32 @@
 </head>
 <body>
     <!-- 로그인 되면 로그아웃으로 글자바꾸기 -->
-    <button onclick="location.href='/Practice/Practice/logInPage/loginPage.html'">로그인 하러 가기</button>
-    <script src="script.js"></script>
+    <p id="you">인덱스 페이지입니다</p>
+    <!-- <div id=""></div> -->
+    <!-- <button id="login" onclick="location.href='/Practice/Practice/logInPage/loginPage.html'">로그인</button> -->
+    <div id="login-box">
+    </div>
+    <div id="justfortest">
+        idValue = undifined<br>
+        pwValue = undifined
+    </div>
+    
+    <!-- <button id="logout"onclick>로그아웃</button> -->
+    <script src="/Practice/Practice/logInPage/script.js"></script>
+    <script>
+        if(isLogin()) {
+            // 로그아웃 버튼
+            document.getElementById("login-box").innerHTML = `<button onclick="logout()">logout</button>`
+        } else {
+            // login button
+            document.getElementById("login-box").innerHTML = `<button onclick="location.href='/Practice/Practice/logInPage/loginPage.html'">로그인</button>`;
+        }
+
+        const postList = getPostList();
+        console.log(postList)
+        postList.forEach(element => {
+            console.log(element);
+        });
+    </script>
 </body>
 </html>
