@@ -32,8 +32,12 @@
 
         const postList = getPostList();
         console.log(postList)
-        postList.forEach(element => {
-            console.log(element);
+        postList.forEach(post => {
+            console.log(post);
+            "게시판 목록 div".add(<div>
+                <div>post.title</div>
+                <div>post.content</div>
+            </div>);
         });
     </script>
 </body>
