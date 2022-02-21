@@ -137,43 +137,6 @@
                     <div class="date">작성일</div>
                     <div class="count">조회</div>
                 </div>
-                <div>
-                    <div class="num">5</div>
-                    <div class="title"><a href="#"></a>글 제목이 들어갑니다.</div>
-                    <div class="writer">이지윤</div>
-                    <div class="date">2022.02.17</div>
-                    <div class="count">1억</div>
-                </div>
-                <div>
-                    <div class="num">4</div>
-                    <div class="title"><a href="#"></a>글 제목이 들어갑니다.</div>
-                    <div class="writer">이지윤</div>
-                    <div class="date">2022.02.17</div>
-                    <div class="count">1억</div>
-                </div>
-                <div>
-                    <div class="num">3</div>
-                    <div class="title"><a href="#"></a>글 제목이 들어갑니다.</div>
-                    <div class="writer">이지윤</div>
-                    <div class="date">2022.02.17</div>
-                    <div class="count">1억</div>
-                </div>
-                <div>
-                    <div class="num">2</div>
-                    <div class="title"><a href="#"></a>글 제목이 들어갑니다.</div>
-                    <div class="writer">이지윤</div>
-                    <div class="date">2022.02.17</div>
-                    <div class="count">1억</div>
-                </div>
-                <div>
-                    <div class="num">1</div>
-                    <div class="title"><a href="#"></a>글 제목이 들어갑니다.</div>
-                    <div class="writer">이지윤</div>
-                    <div class="date">2022.02.17</div>
-                    <div class="count">1억</div>
-                </div>
-            
-
             </div>
             <div class="boardPage">
 
@@ -185,7 +148,39 @@
         </div>
     </div>
     <script>
+        const post_list = [
+            {id: 1, title: 'jiho', writer: '이지윤', date:'2022.02.21', count:100}, 
+            {id: 2, title: 'JY', writer: '이지윤', date:'2022.02.21', count:100},
+        ];
 
+        post_list.forEach(post => {
+            const box = document.createElement('div');
+            document.querySelector(".boardList").append(box);
+
+            const achor = document.createElement('a');
+            achor.href = `/post/${post.id}`;
+            box.append(achor)
+            
+            const div_id = document.createElement('div')
+            achor.append(div_id);
+            div_id.innerHTML=post.id
+
+            const div_title = document.createElement('div')
+            achor.append(div_title);
+            div_title.innerHTML=post.title
+
+            const div_writer = document.createElement('div')
+            achor.append(div_writer);
+            div_writer.innerHTML=post.writer
+
+            const div_date = document.createElement('div')
+            achor.append(div_date);
+            div_date.innerHTML=post.date
+
+            const div_count = document.createElement('div')
+            achor.append(div_count);
+            div_count.innerHTML=post.count
+        });
     </script>
 </body>
 </html>
