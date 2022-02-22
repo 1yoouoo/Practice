@@ -116,12 +116,6 @@
             height: 20px;
         }
         
-        
-        
-        
-
-
-
     </style>
     <div class="boardWrap">
         <div class="boardTitle">
@@ -158,7 +152,7 @@
             document.querySelector(".boardList").append(box);
 
             const achor = document.createElement('a');
-            achor.href = `/post/${post.id}`;
+            achor.href = `/post.html?id=${post.id}`;
             box.append(achor)
             
             const div_id = document.createElement('div')
